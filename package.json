@@ -1,0 +1,23 @@
+{
+  "author": "Steve Sanderson",
+  "name": "ejs-middleware",
+  "description": "Handles requests that match a .ejs file by rendering that file",
+  "keywords": [
+    "template",
+    "engine",
+    "ejs"
+  ],  
+  "version": "0.0.1",
+  "homepage": "https://github.com/SteveSanderson/node-ejs-middleware",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SteveSanderson/node-ejs-middleware.git"
+  },
+  "dependencies": { "ejs": "*" },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "main": "./ejs-middleware.js"  
+}
