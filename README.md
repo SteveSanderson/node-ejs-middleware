@@ -12,9 +12,9 @@ Handles requests that match a `*.ejs` file by rendering that file. Example usage
   
 Now for each incoming request, Node will look for a matching file under `/static`. Examples:
 
- * Request for `/` will match `/static/index.ejs`
- * Request for `/some/file` will match `/static/some/file.ejs`
- * Request for `/some/dir` will match `/static/some/dir/index.ejs`
+ * Request for `/` will match `yourapp/static/index.ejs`
+ * Request for `/some/file` will match `yourapp/static/some/file.ejs`
+ * Request for `/some/dir` will match `yourapp/static/some/dir/index.ejs`
  
 Notice that, if the request matches a directory, ejsMiddleware appends `index` automatically. Then, in all cases, it appends `.ejs`. If there is such a file, it will be rendered out to the response. If there's no such file, ejsMiddleware does nothing, and your subsequent handlers can process the request.
 
