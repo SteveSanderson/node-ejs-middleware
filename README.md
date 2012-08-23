@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/SteveSanderson/node-ejs-middleware.png)](http://travis-ci.org/SteveSanderson/node-ejs-middleware)
 node-ejs-middleware
 ===================
 
