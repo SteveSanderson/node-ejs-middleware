@@ -15,7 +15,7 @@ module.exports = function(dir, extension, registerInApp) {
 
         fs.lstat(pathname, function(err, stats) {
             // Requests that match /dir will be interpreted as /dir/index
-            if(!err && stats.isDirectory()) {
+            if(!err && (stats.isDirectory() || (stats.isSymbolicLink() && fs.existsSync(path.join(pathname, 'index'))))) {
                 pathname = path.join(pathname, 'index');
             }
             pathname += '.' + extension;
